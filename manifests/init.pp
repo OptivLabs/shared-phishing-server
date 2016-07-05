@@ -1,6 +1,6 @@
-# Class: phishingservers
+# Class: shared-phishing-server
 #
-# This module manages phishingservers
+# This module manages shared-phishing-server
 #
 # Parameters: 
 #
@@ -10,12 +10,12 @@
 #
 # Sample Usage:
 #
-class phishingservers (
-  #$example = $phishingservers::params::example,
-  $userdomain = $phishingservers::params::userdomain,
-  $apacheadmingroup = $phishingservers::params::apacheadmingroup,
-  $sudoersgroup = $phishingservers::params::sudoersgroup,
+class shared-phishing-server (
+  #$example = $shared-phishing-server::params::example,
+  $userdomain = $shared-phishing-server::params::userdomain,
+  $apacheadmingroup = $shared-phishing-server::params::apacheadmingroup,
+  $sudoersgroup = $shared-phishing-server::params::sudoersgroup,
 
-) inherits phishingservers::params {
+) inherits shared-phishing-server::params {
 
 }

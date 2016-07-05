@@ -2,12 +2,12 @@
   "author": "Keith Walker",
   "dependencies": [],
   "license": "GPL",
-  "name": "kwalker-phishingservers",
+  "name": "kwalker-shared-phishing-server",
   "operatingsystem_support": [],
   "project_page": "",
   "requirements": [],
-  "source": "phishingservers",
-  "summary": "phishingservers",
+  "source": "shared-phishing-server",
+  "summary": "shared-phishing-server",
   "tags": [],
   "version": "0.1.0"
 }

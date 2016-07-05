@@ -1,4 +1,4 @@
-class phishingservers::install inherits phishingservers {
+class shared-phishing-server::install inherits shared-phishing-server {
   include apt
   include apache
   include puppet-pbis::join
@@ -9,7 +9,7 @@ class phishingservers::install inherits phishingservers {
   }
 
 #  package { 'apache2' :
-#    #require => Class['phishingservers::setup'],
+#    #require => Class['shared-phishing-server::setup'],
 #    ensure => installed,
 #    provider => apt,
 #  }

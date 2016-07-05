@@ -1,4 +1,4 @@
-class phishingservers::config inherits phishingservers {
+class shared-phishing-server::config inherits shared-phishing-server {
   include apt
   class { 'apache': mpm_module => 'prefork',}
   class { 'apache::mod::php': }
@@ -13,7 +13,7 @@ class phishingservers::config inherits phishingservers {
 
   $blankvhost = "<html></html>"
   file { '/var/www/html/index.html' :
-    require => Class['phishingservers::install'],
+    require => Class['shared-phishing-server::install'],
     notify => Service['apache2'],
     ensure => present,
     owner => root,
@@ -43,7 +43,7 @@ class phishingservers::config inherits phishingservers {
   }
 
   file { '/etc/apache2/sites-enabled/includelocal.conf' :
-    require => Class['phishingservers::install'],
+    require => Class['shared-phishing-server::install'],
     notify => Service['apache2'],
     ensure => present,
     owner => root,

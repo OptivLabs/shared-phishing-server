@@ -1,1 +1,1 @@
-include phishingservers
+include shared-phishing-server
