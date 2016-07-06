@@ -1,3 +1,3 @@
 # shared-phishing-server #
 
-This is the shared-phishing-server module. It provides...
+Puppet module to create a shared access phishing server on Ubuntu 14.04
